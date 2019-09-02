@@ -29,7 +29,7 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
-        stage('Deploy for production') {
+        stage('Deploy for master') {
             when {
                 branch 'master'
             }
